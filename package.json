@@ -1,0 +1,38 @@
+{
+  "name": "nodeoauth",
+  "version": "1.0.0",
+  "description": "node Oauth",
+  "main": "./bin/www",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=development nodemon --optimize_for_size --trace-warnings --experimental-modules --experimental-json-modules --es-module-specifier-resolution=node ./bin/www.js",
+    "start": "NODE_ENV=development node --experimental-modules --experimental-json-modules --es-module-specifier-resolution=node ./bin/www.js",
+    "start-prod": "NODE_ENV=production node ./bin/www.js"
+  },
+  "keywords": [
+    "node"
+  ],
+  "author": "Luca Tranfaglia",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.332.0",
+    "@aws-sdk/client-secrets-manager": "^3.332.0",
+    "@aws-sdk/s3-request-presigner": "^3.332.0",
+    "ajv": "^8.12.0",
+    "axios": "^1.4.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "http": "^0.0.1-security",
+    "jsonwebtoken": "^9.0.0",
+    "mongodb": "^5.4.0",
+    "node-fetch": "^3.3.1",
+    "prettier": "^2.8.7",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22"
+  }
+}
